@@ -1,0 +1,6 @@
+{
+    "publishableKey": "pk_test_aHVtYW5lLXNsb3RoLTQyLmNsZXJrLmFjY291bnRzLmRldiQ",
+    "secretKey": "sk_test_t3CkPisIzxvONMstS4fnFaeVAF1IHIubl6mMf5AjuG",
+    "claimUrl": "https://dashboard.clerk.com/apps/claim?token=5i3wqm7rydn3nu460q5fgr9gk3en0kwtnchqf6hq",
+    "apiKeysUrl": "https://dashboard.clerk.com/apps/app_3A23n4UaNnusJGkf1TqNjcFGprZ/instances/ins_3A23n9IOEhA02yGmsMgt6VLaoMc/api-keys"
+}
