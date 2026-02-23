@@ -17,11 +17,21 @@ import {
 } from "@/components/ui/select";
 import { Sparkles } from "lucide-react";
 import { GENRES } from "@/convex/genres";
+import { useFormStatus } from "react-dom";
 
 interface AddRecommendationDialogProps {
     open: boolean;
     onOpenChange: (open: boolean) => void;
     onSubmit: (formData: FormData) => Promise<void>;
+}
+
+function Submit() {
+    const { pending } = useFormStatus();
+    return (
+        <Button type="submit" className="w-full" disabled={pending}>
+            {pending ? "Sharing..." : "Share with the world"}
+        </Button>
+    );
 }
 
 export function AddRecommendationDialog({
@@ -82,9 +92,8 @@ export function AddRecommendationDialog({
                         />
                     </div>
 
-                    <Button type="submit" className="w-full">
-                        Share with the world
-                    </Button>
+                    <Submit />
+
                 </form>
             </DialogContent>
         </Dialog>
